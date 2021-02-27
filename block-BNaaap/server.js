@@ -2,8 +2,9 @@ var http = require('http');
 
 function handleRequest(req, res) {
   //   res.statusCode = 200;
+  console.log(req.method);
   res.writeHead(201, { 'content-type': 'text/html' });
-  res.end('Welcome');
+  res.end('<h1>Welcome</h1>');
 }
 
 let server = http.createServer(handleRequest);
