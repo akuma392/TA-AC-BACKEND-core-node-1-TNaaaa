@@ -12,7 +12,7 @@ function handleRequest(req, res) {
     res.end(`<h2>this is all about NodeJS</h2>`);
   } else if (req.method === 'POST' && pathName === '/about') {
     res.writeHead(201, { 'content-type': 'application/json' });
-    res.end({ message: 'this is a post request' });
+    res.end(`{ message: this is a post request }`);
   } else {
     res.statusCode = 403;
     res.end('Page not found');
