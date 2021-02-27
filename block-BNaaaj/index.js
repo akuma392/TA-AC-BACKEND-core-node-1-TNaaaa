@@ -8,7 +8,7 @@ var fs = require('fs');
 
 console.log(freeMemory, cpus);
 
-var { readFile } = require('fs');
+var { readFile, unlink } = require('fs');
 
 var buff1 = Buffer.alloc(12);
 var buff2 = Buffer.allocUnsafe(12);
